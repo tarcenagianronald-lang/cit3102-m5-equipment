@@ -79,7 +79,6 @@ GET /api/equipment?category=Electronics&location=Room 101
 ### 10. Delete (204)
 ![10](docs/screenshots/10-delete-204.jpeg)
 
-
 ## Why does DELETE return 204 and not 200?
 
 Since there is nothing left after the deletion, DELETE will return a 204 No Content response. In general, a 200 response always includes a body with information about the resource. However, this resource does not exist anymore. Therefore, it is necessary to inform the client using a 204 response that everything was fine and that there will be no body to read.
